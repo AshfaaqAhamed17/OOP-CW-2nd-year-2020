@@ -1,0 +1,50 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar{
+  background-color: #3D195B;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+button{
+  font-family: 'Andika New Basic', sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+button:hover{
+  background-color: #04f5ff;
+  color: black;
+}
+
+.mat-tab-group {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.mat-tab-group .mat-tab {
+  width: 100%;
+}
+
+#logo {
+  height: 50px;
+  width: 40px;
+  background-color: #04f5ff;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.logoName{
+  font-family: 'Andika New Basic', sans-serif;
+  margin-left:10px;
+  font-weight: bold;
+  font-size: 22px;
+}

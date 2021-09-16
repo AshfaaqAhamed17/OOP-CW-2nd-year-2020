@@ -1,0 +1,84 @@
+<img src="./assets/images/bg1.jpg" id="bgImg">
+<div id="blurbox"></div>
+
+<h1 class="heading">Fooball Clubs Statistics</h1>
+
+<div id="buttons">
+  <button mat-button id="sort-button" (click)="sortByWins()">
+    Sort By Wins <mat-icon>swap_vert</mat-icon>
+  </button>
+  <button mat-button id="sort-button" (click)="sortByGoals()">
+    Sort By Goals <mat-icon>swap_vert</mat-icon>
+  </button>
+</div>
+
+<div id="table-div">
+  <table mat-table [dataSource]="tableDataSourceClubRegisteredData">
+
+    <ng-container matColumnDef="nameofClub">
+      <th mat-header-cell *matHeaderCellDef> Name of Club </th>
+      <td mat-cell *matCellDef="let elementCellData" id="col1n2">
+        {{elementCellData.nameOfSportsClub}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="clubID">
+      <th mat-header-cell *matHeaderCellDef> Club ID </th>
+      <td mat-cell *matCellDef="let elementCellData" id="col1n2">
+        {{elementCellData.footballClubId}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="numOfWins">
+      <th mat-header-cell *matHeaderCellDef> No. of wins </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.numberOfWins}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="numOfLosses">
+      <th mat-header-cell *matHeaderCellDef> No. of losses </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.numberOfLoss}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="numOfDraws">
+      <th mat-header-cell *matHeaderCellDef> No. of draws </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.numberOfMatchDraw}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="goalsScored">
+      <th mat-header-cell *matHeaderCellDef> Goals scored </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.numberOfGoalsScored}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="goalsReceived">
+      <th mat-header-cell *matHeaderCellDef> Goals received </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.numberOfGoalsReceived}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="totalPlayedMatches">
+      <th mat-header-cell *matHeaderCellDef> Total played matches </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.numberOfMatchesPlayed}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="totalPoints">
+      <th mat-header-cell *matHeaderCellDef> Total points </th>
+      <td mat-cell *matCellDef="let elementCellData">
+        {{elementCellData.currentNumberOfPoints}}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="tableHeadingClubRegister"></tr>
+    <tr mat-row *matRowDef="let row; columns: tableHeadingClubRegister;"></tr>
+  </table>
+</div>

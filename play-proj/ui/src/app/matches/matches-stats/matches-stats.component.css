@@ -1,0 +1,160 @@
+#bgImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: blur(2px);
+  z-index: -1
+}
+
+#blurbox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  background-color: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+button{
+  font-family: 'Andika New Basic', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.heading{
+  font-family: 'Nova Flat', cursive;
+  background-color: rgba(163,163,163,0.7);
+  padding: 15px 25px;
+  width: max-content;
+  margin-top: 7%;
+  margin-left: 10%;
+  border-radius: 20px;
+  font-size: 50px;
+  color: white;
+}
+
+#searchOption {
+  text-align: center;
+  margin-top: 40px;
+}
+
+input {
+  min-width: 300px;
+  min-height: 30px;
+  border: none;
+  border-bottom: solid 1px #a3a3aa;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  padding: 15px;
+  outline: none;
+}
+
+input:focus {
+  border: red solid 2px;
+}
+
+#searchDateButton {
+  width: 150px;
+  text-align: center;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 30px;
+  margin: 10px;
+  background-color: #008896;
+  outline: none;
+  transition: 0.5s;
+}
+
+#searchDateButton:hover {
+  transform: scale(0.95);
+  box-shadow: 5px 5px 10px #008896
+}
+
+#searchText {
+  margin-top: 20px;
+  margin-left: -12%;
+}
+
+#refresh{
+  background-color: white;
+  border-radius: 100px;
+  height: 40px;
+  min-width: 0;
+  transition: 0.5s;
+}
+
+#refresh:hover {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 50px whitesmoke;
+}
+/* TABLE CSS */
+
+table {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+tr:hover {
+  background: white;
+}
+
+th.mat-header-cell {
+  background: #b1b1b1;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 28px;
+  border-right: solid 1px #c9c9c9;
+  border-left: solid 1px #c9c9c9;
+}
+
+#colOne {
+  text-align: left;
+}
+
+tr {
+  text-align: center;
+  padding: 25px;
+  background-color: #eeeeee;
+}
+
+td.mat-cell {
+  border-right: solid 1px #c9c9c9;
+  border-left: solid 1px #c9c9c9;
+  width: 150px;
+  font-size: 16px;
+}
+
+#addMatchButton {
+  line-height: 30px;
+  border-radius: 100px;
+  height: 110px;
+  width: 110px;
+  color: white;
+  text-align: center;
+  background-color: rgb(0, 146, 73);
+  float: right;
+  margin-right: 180px;
+  margin-top: -100px;
+  outline: none;
+  transition: 0.5s;
+}
+
+#addMatchButton:hover {
+  transform: scale(0.95);
+  border: solid 2px white;
+  box-shadow: 5px 5px 8px #c9c9c9, -5px 5px 8px #c9c9c9, -5px -5px 8px black,
+  5px -5px 8px black;
+}
+.spacer {
+  flex: 1 1 auto;
+}
